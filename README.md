@@ -33,7 +33,8 @@ src/
 
 ### 1. Clone the repo
 
-git clone https://github.com/your-org/ewatchmarket.git
+git clone [https://github.com/your-org/ewatchmarket.git](https://github.com/robmars123/eWatchMarket.git)
+
 cd ewatchmarket
 
 npm install
