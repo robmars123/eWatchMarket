@@ -6,18 +6,17 @@ A domain-driven Express.js + TypeScript backend that orchestrates existing produ
 
 ## 📦 Project Structure
 
+```
 src/
-├── Configs/         # Environment, DB, security configs
-├── Dbconnection/    # SQL Server connection pool
-├── Domains/         # Feature modules (Product, Order, User, Dashboard, etc.)
-├── Middlewares/     # Security, logging, validation
-├── Utils/           # Shared helpers
-├── app.ts           # Express setup
-├── route.ts         # Centralized route registration
-└── server.ts        # Entry point
-
-
----
+├── Configs/          Environment, DB, security configs
+├── Dbconnection/     SQL Server connection pool
+├── Domains/          Feature modules (Product, Order, User, Dashboard, etc.)
+├── Middlewares/      Security, logging, validation
+├── Utils/            Shared helpers
+├── app.ts            Express setup
+├── route.ts          Centralized route registration
+└── server.ts         Entry point
+```
 
 ## ⚙️ Tech Stack
 
