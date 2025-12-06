@@ -39,17 +39,17 @@ cd ewatchmarket
 
 npm install
 
-Architecture Principles
-# Domain-Driven Design: Each feature lives in its own folder with controller, service, model, and routes.
+# Architecture Principles
+ Domain-Driven Design: Each feature lives in its own folder with controller, service, model, and routes.
 
-# Separation of Concerns: Configs, middleware, and business logic are isolated.
+ Separation of Concerns: Configs, middleware, and business logic are isolated.
 
-# Environment-Driven: .env powers all runtime settings.
+ Environment-Driven: .env powers all runtime settings.
 
-# Scalable Routing: route.ts centralizes all domain routes.
+ Scalable Routing: route.ts centralizes all domain routes.
 
 
-For Production-ready add:
+# For Production-ready add:
 1. Error handling
 
 2. Logging
