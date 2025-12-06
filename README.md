@@ -16,6 +16,7 @@ src/
 ├── route.ts         # Centralized route registration
 └── server.ts        # Entry point
 
+
 ---
 
 ## ⚙️ Tech Stack
@@ -46,3 +47,17 @@ Architecture Principles
 # Environment-Driven: .env powers all runtime settings.
 
 # Scalable Routing: route.ts centralizes all domain routes.
+
+
+For Production-ready add:
+1. Error handling
+
+2. Logging
+
+3. Validation
+
+4. Security layers
+
+5. Tests
+
+6. Deployment pipeline
