@@ -4,7 +4,7 @@ A domain-driven Express.js + TypeScript backend that orchestrates existing produ
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 src/
@@ -18,7 +18,7 @@ src/
 └── server.ts         Entry point
 ```
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 - **Runtime**: Node.js (ES2023, ESM)
 - **Framework**: Express.js v5
@@ -26,10 +26,10 @@ src/
 - **Database**: SQL Server via `mssql`
 - **Security**: Helmet CSP
 - **Dev Tools**: tsx, nodemon, ESLint, Prettier
-
+- **CORS**: cors
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repo
 
@@ -38,6 +38,8 @@ git clone [https://github.com/your-org/ewatchmarket.git](https://github.com/robm
 cd ewatchmarket
 
 npm install
+
+npm install cors
 
 Architecture Principles
 # Domain-Driven Design: Each feature lives in its own folder with controller, service, model, and routes.
