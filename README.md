@@ -92,7 +92,6 @@ cd ewatchmarket
 
 npm install
 
-<<<<<<< HEAD
 npm install cors
 
 Architecture Principles
@@ -100,7 +99,6 @@ Architecture Principles
 =======
 # Architecture Principles
  Domain-Driven Design: Each feature lives in its own folder with controller, service, model, and routes.
->>>>>>> 8b237a2f55f929e464809565278ca913a47dbdef
 
  Separation of Concerns: Configs, middleware, and business logic are isolated.
 
