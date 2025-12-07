@@ -2,6 +2,10 @@
 
 A domain-driven Express.js + TypeScript backend that orchestrates existing product modules into a unified dashboard API. Built for scalability, modularity, and production-grade maintainability.
 
+Solution Architecture:
+
+Clean Architecture - https://forsenior.dev/blog/nodejs/patterns/clean-architecture
+DDD - https://github.com/natserract/nodejs-ddd
 ---
 
 ## Project Structure
@@ -68,3 +72,31 @@ Architecture Principles
 5. Tests
 
 6. Deployment pipeline
+
+
+# Debugging Ability:
+
+```
+Create launch.json: 
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Express (TS)",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server.ts",
+      "runtimeExecutable": "nodemon",
+      "runtimeArgs": ["--exec", "tsx", "--inspect"],
+      "restart": true,
+      "console": "integratedTerminal",
+      "serverReadyAction": {
+        "pattern": "Debugging: Server running on port 3000",
+        "uriFormat": "http://localhost:3000",
+        "action": "openExternally"
+      }
+    }
+  ]
+}
+```

@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon",
+    "dev": "nodemon --exec tsx --inspect src/server.ts",
     "build": "tsc",
-    "start": "nodemon dist/server.js"
+    "start": "nodemon dist/server.js",
+    "clean": "rimraf dist"
   },
   "keywords": [],
   "author": "",

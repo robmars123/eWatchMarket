@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Express (TS)",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server.ts",
+      "runtimeExecutable": "nodemon",
+      "runtimeArgs": ["--exec", "tsx", "--inspect"],
+      "restart": true,
+      "console": "integratedTerminal",
+      "serverReadyAction": {
+        "pattern": "Server running on port 3000",
+        "uriFormat": "http://localhost:3000",
+        "action": "openExternally"
+      }
+    }
+  ]
+}
+
