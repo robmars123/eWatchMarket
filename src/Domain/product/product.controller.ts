@@ -1,6 +1,7 @@
 import type { Request, Response } from "express";
 import { getAllProducts, getProductById } from "./product.service.js";
 
+
 export async function getProducts(req: Request, res: Response) {
   try {
     const products = await getAllProducts();
