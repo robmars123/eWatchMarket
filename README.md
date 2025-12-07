@@ -14,14 +14,26 @@ DDD - https://github.com/natserract/nodejs-ddd
 
 ```
 src/
-├── Configs/          Environment, DB, security configs
-├── Dbconnection/     SQL Server connection pool
-├── Domains/          Feature modules (Product, Order, User, Dashboard, etc.)
-├── Middlewares/      Security, logging, validation
-├── Utils/            Shared helpers
-├── app.ts            Express setup
-├── route.ts          Centralized route registration
-└── server.ts         Entry point
+├── Domains/
+│   ├── product/              ← orchestrates .NET product API
+│   ├── user/                 ← wraps Express user service
+│   ├── chatbot/              ← interfaces with Python bot
+│   └── ...
+│
+├── Infrastructure/
+│   ├── External/
+│   │   ├── productApi.ts     ← ACL for .NET
+│   │   ├── chatbotClient.ts  ← ACL for Python
+│   │   └── ...
+│   ├── Cache/
+│   ├── Logging/
+│   └── Auth/
+│
+├── Middlewares/
+├── Utils/
+├── Configs/
+└── tests/
+
 ```
 
 ## Tech Stack
