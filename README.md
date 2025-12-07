@@ -14,14 +14,61 @@ DDD - https://github.com/natserract/nodejs-ddd
 
 ```
 src/
-├── Configs/          Environment, DB, security configs
-├── Dbconnection/     SQL Server connection pool
-├── Domains/          Feature modules (Product, Order, User, Dashboard, etc.)
-├── Middlewares/      Security, logging, validation
-├── Utils/            Shared helpers
-├── app.ts            Express setup
-├── route.ts          Centralized route registration
-└── server.ts         Entry point
+├── Configs/                  # Environment & security configuration
+│   ├── env.ts
+│   └── security.ts
+│
+├── Dbconnection/             # Database connection clients (polyglot persistence)
+│   ├── mssql.ts
+│   ├── postgres.ts
+│   └── mongodb.ts
+│
+├── Domains/                  # Domain-driven modules (business logic per feature)
+│   ├── product/
+│   │   ├── product.controller.ts
+│   │   ├── product.routes.ts
+│   │   ├── product.service.ts
+│   │   └── product.repository.ts
+│   └── user/
+│       ├── user.controller.ts
+│       ├── user.routes.ts
+│       ├── user.service.ts
+│       └── user.repository.ts
+│
+├── Infrastructure/           # Cross-cutting technical concerns
+│   ├── Auth/
+│   │   └── authentication.service.ts
+│   ├── Cache/
+│   │   └── redis.cache.ts
+│   ├── DbConnection/         # Shared DB clients or adapters
+│   ├── External/
+│   │   └── external.gateway.ts
+│   └── Logging/
+│       └── application.logging.service.ts
+│
+├── Middlewares/              # Express middleware
+│   └── security.ts
+│
+├── Utils/                    # App/server setup & utilities
+│   ├── app.ts
+│   ├── route.ts
+│   ├── server.ts
+│   └── datetime.utility.ts
+│
+├── tests/                    # Unit & integration tests
+│   ├── unit.test/
+│   │   ├── Dbconnection/
+│   │   │   └── db.test.ts
+│   │   └── domain/
+│   │       ├── product.test.ts
+│   │       └── user.test.ts
+│   └── integration.test/
+│       └── domain/
+│           ├── product.controller.test.ts
+│           └── user.controller.test.ts
+│
+.env                          # Environment variables
+
 ```
 
 ## Tech Stack
