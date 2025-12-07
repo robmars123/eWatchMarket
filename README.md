@@ -1,10 +1,11 @@
-# EWATCHMARKET Backend
+# NodeJs Backend Solution Architecture
 
 A domain-driven Express.js + TypeScript backend that orchestrates existing product modules into a unified dashboard API. Built for scalability, modularity, and production-grade maintainability.
 
 Solution Architecture:
 
 Clean Architecture - https://forsenior.dev/blog/nodejs/patterns/clean-architecture
+
 DDD - https://github.com/natserract/nodejs-ddd
 ---
 
