@@ -147,3 +147,11 @@ Create launch.json:
   ]
 }
 ```
+
+# Run Docker-Compose file
+
+```
+
+docker-compose up --build
+
+```
