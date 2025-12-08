@@ -155,3 +155,16 @@ Create launch.json:
 docker-compose up --build
 
 ```
+
+# Minimal Production Deployment Structure
+
+```
+
+Code
+dist/                # compiled output (TypeScript, bundler)
+public/              # static assets (CSS, JS, images)
+views/               # templates (if used for SSR)
+package.json         # defines dependencies and start script
+package-lock.json    # locks dependency versions
+
+```
